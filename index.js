@@ -13,7 +13,7 @@ const cors = require("cors");
 dotenv.config();
 
 mongoose
-  .connect(`${process.env.MONGO_URI}`, {
+  .connect(`${`mongodb+srv://hazem:hazem@cluster0.l5jhg.mongodb.net/shop`}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     writeConcern: { w: "majority", j: true, wtimeout: 1000 },
